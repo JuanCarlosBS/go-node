@@ -4,16 +4,16 @@
 const Model = use('Model')
 
 class Task extends Model {
-    project () {
-        return this.belongsTo('App/Models/Project')
+    project() {
+        return this.belongsTo("App/Models/Project");
     }
-
-    user () {
-        return this.belongsTo('App/Models/User')
+    
+    user() {
+        return this.belongsTo("App/Models/User");
     }
-
-    file () {
-        return this.belongsTo('App/Models/File')
+    
+    file() {
+        return this.belongsTo("App/Models/File");
     }
 }
 
